@@ -9,7 +9,7 @@ Upon launching the program, it will prompt you to insert a specific flash drive.
 Next, you'll be prompted to enter your password, the corresponding service's name, and an amusing name for a pet (chosen for added security). This information will be used to create a file that stores the pet's name, the password, and the associated service.
 
 For decryption, follow these steps:
-1. Run the program.
+1. Run the program using: ```python key.py```
 2. Insert the designated flash drive.
 3. Choose option 2 from the menu.
 4. Enter the pet's name, which was used to generate all password-related files.
