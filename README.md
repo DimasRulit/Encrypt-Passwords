@@ -1,4 +1,4 @@
-# This project does password encryption, and also uses a flash drive as a key, which contains an encrypted secret key to decrypt AEC.
+# This project does password encryption, and also uses a flash drive as a key, which contains an encrypted secret key to decrypt AES.
 
 
 ## How it works?
