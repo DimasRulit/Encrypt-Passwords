@@ -1,14 +1,25 @@
-# This project does password encryption, and also uses a flash drive as a key, which contains an encrypted secret key to decrypt AES.
+# Password Encryption with Flash Drive Key
 
+This project focuses on enhancing security by employing password encryption. It introduces a unique approach by utilizing a flash drive as a key. The flash drive contains an encrypted secret key that is necessary for decrypting AES-encrypted data.
 
-## How it works?
+## How It Works
 
-When you run the program, it will ask you to insert a flash drive if no flash drive was found. (There should not be 2 flash drives, only one.) After that, the program will create a secret key and also an IV key.
+Upon launching the program, it will prompt you to insert a specific flash drive. Note that only a single flash drive should be connected at a time. The program will then proceed to generate a secret key along with an Initialization Vector (IV) key.
 
-Then you need to enter the password, the name of the service to which the password refers, and the name of the pet lol (For precise security), after which, it will create a file that stores in itself: Pet name, password, service.
+Next, you'll be prompted to enter your password, the corresponding service's name, and an amusing name for a pet (chosen for added security). This information will be used to create a file that stores the pet's name, the password, and the associated service.
 
-If you need to decrypt files: Run the program, plug in the flash drive, press 2 and then enter the name of the pet that was used to create absolutely all files with passwords. You will get a list of services. Selected the service number - the password is automatically copied to the clipboard.
+For decryption, follow these steps:
+1. Run the program.
+2. Insert the designated flash drive.
+3. Choose option 2 from the menu.
+4. Enter the pet's name, which was used to generate all password-related files.
+5. A list of services will be displayed. Select a service by its corresponding number, and the password will be automatically copied to your clipboard.
 
-## NOTE: ONLY WORKS ON WINDOWS SYSTEMS.
+## Compatibility
 
-What I like about this project is if you copy all the data from the flash drive, given the key, etc. to another flash drive - the program will not be able to decrypt, because the information in the key does not match the information in the new flash drive. But the information in the key is encrypted thanks to the IV file. And thanks to the same file, the data is encrypted.
+Please be aware that this program is designed exclusively for Windows systems.
+
+## Key Security Features
+
+One of the remarkable aspects of this project is its ability to maintain data security even when transferring all information from the original flash drive, including the key, to another flash drive. This measure ensures that the program cannot decrypt data with the new flash drive, as the key's information will not match. The encrypted information within the key is further secured by the IV file. Consequently, both the data and key remain highly protected.
+
